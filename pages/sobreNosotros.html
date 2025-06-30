@@ -1,62 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moblin - Diseño que se siente</title>
-  <link rel="stylesheet" href="../styles/styles.css"  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/styles.css" />
 </head>
+
 <body>
   <header>
-    <nav>
-       <img src="../assets/icon/logo.png " alt="Logo"></img>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="./catalogo.html">Catálogo</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg p-0">
+      <a class="" href="../index.html">
+        <img src="../assets/icon/logo.png" alt="Logo"></img>
+      </a>
+      <div class="container-fluid collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a href="./catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a href="#">Contacto</a></li>
+        </ul>
     </nav>
+
+    </div>
+
   </header>
 
- <main>
-  <section class="historia">
-    <h1>Nuestra Historia</h1>
-    <p>Moblin nació con una idea simple: combinar diseño y comodidad. Desde 2015, creamos muebles que inspiran y acompañan el día a día de miles de personas.</p>
-  </section>
+  <main>
+    <section class="historia">
+      <h1>Nuestra Historia</h1>
+      <p>Moblin nació con una idea simple: combinar diseño y comodidad. Desde 2015, creamos muebles que inspiran y
+        acompañan el día a día de miles de personas.</p>
+    </section>
 
-  <section class="valores">
-    <h2>Valores que nos representan</h2>
-    <ul>
-      <li>🌱 Sostenibilidad</li>
-      <li>🎯 Diseño funcional</li>
-      <li>🧠 Innovación</li>
-      <li>🤝 Compromiso con el cliente</li>
-    </ul>
-  </section>
+    <section class="valores">
+      <h2>Valores que nos representan</h2>
+      <ul>
+        <li>🌱 Sostenibilidad</li>
+        <li>🎯 Diseño funcional</li>
+        <li>🧠 Innovación</li>
+        <li>🤝 Compromiso con el cliente</li>
+      </ul>
+    </section>
 
-  <section class="equipo">
-    <h2>Conocé a nuestro equipo</h2>
-    <article>
-      <h3>Lucía Fernández</h3>
-      <p>Fundadora y directora de diseño. Soñadora del confort moderno.</p>
-    </article>
-    <article>
-      <h3>Martín Rojas</h3>
-      <p>Responsable de calidad y producción. Fan de los detalles.</p>
-    </article>
-  </section>
+    <section class="equipo">
+      <h2>Conocé a nuestro equipo</h2>
+      <article>
+        <h3>Lucía Fernández</h3>
+        <p>Fundadora y directora de diseño. Soñadora del confort moderno.</p>
+      </article>
+      <article>
+        <h3>Martín Rojas</h3>
+        <p>Responsable de calidad y producción. Fan de los detalles.</p>
+      </article>
+    </section>
 
-  <section class="vision">
-    <h2>Nuestra Visión</h2>
-    <p>Crear un mundo donde el buen diseño esté al alcance de todos.</p>
-  </section>
-</main>
+    <section class="vision">
+      <h2>Nuestra Visión</h2>
+      <p>Crear un mundo donde el buen diseño esté al alcance de todos.</p>
+    </section>
+  </main>
 
 
-  <footer>
-    <p>&copy; 2025 Moblin. Todos los derechos reservados.</p>
+  <footer class="footer">
+    <div class="footer-contacto d-flex">
+      <div class="d-flex col flex-column social-icons">
+        <span class="">CONTACTO</span>
+        <a href="#" target="_blank">
+          <img src="../assets/icon/whatsapp-icon.png" alt="whatsapp">
+          <p>+54 9 11 9999-9999 </p>
+        </a>
+        <p>Av.Libertador 9999 / Buenos Aires, Argentina</p>
+        <p>Horario: lunes a viernesde 8:00 a 16:00hs</p>
+      </div>
+
+      <div class="d-flex col">
+        <div class="d-flex col flex-column social-icons">
+          <span>REDES SOCIALES</span>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="../assets/icon/facebook.png" alt="Facebook"> Facebook
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="../assets/icon/instagram.png" alt="Instagram">Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <p class="p-0 m-0">&copy; 2025 Moblin. Todos los derechos reservados.</p>
+    </div>
+
   </footer>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
