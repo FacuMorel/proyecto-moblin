@@ -12,58 +12,99 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg p-0">
-      <a class="" href="../index.html">
-        <img src="../assets/icon/logo.png" alt="Logo"></img>
-      </a>
-      <div class="container-fluid collapse navbar-collapse justify-content-center">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a href="./catalogo.html">Catálogo</a></li>
-          <li class="nav-item"><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a href="#">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid navbar-menu">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <img class="menu" src="../assets/icon/menu.png" alt="menu-hamburguesa">
+        </button>
+        <div id="menu" class="collapse navbar-collapse justify-content-around">
+          <a class="" href="index.html">
+            <img src="../assets/icon/logo.png" alt="Logo" class="logo"></img>
+          </a>
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a href="../pages/catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a href="#">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="../pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
-    </div>
-
   </header>
 
   <main>
     <section class="historia">
-      <h1>Nuestra Historia</h1>
-      <p>Moblin nació con una idea simple: combinar diseño y comodidad. Desde 2015, creamos muebles que inspiran y
-        acompañan el día a día de miles de personas.</p>
-    </section>
 
-    <section class="valores">
-      <h2>Valores que nos representan</h2>
-      <ul>
-        <li>🌱 Sostenibilidad</li>
-        <li>🎯 Diseño funcional</li>
-        <li>🧠 Innovación</li>
-        <li>🤝 Compromiso con el cliente</li>
+      <section class="valores mb-5 text-center">
+        <h1>Nuestra Historia
+          <hr>
+        </h1>
+        <p>Moblin nació con una idea simple: combinar diseño y comodidad. Desde 2015, creamos muebles que inspiran y
+          acompañan el día a día de miles de personas.</p>
+        </section>
+        <ul class="list-unstyled text-center">
+        <h2 class="text-center">Valores que nos representan</h2>
+        <li> <strong>Sostenibilidad:</strong> Diseñamos con conciencia ecológica, eligiendo materiales responsables
+          con el medioambiente.</li>
+        <li><strong>Diseño funcional:</strong> Creamos piezas que no solo se ven bien, sino que se adaptan a tu vida
+          cotidiana.</li>
+        <li><strong>Innovación:</strong> Estamos en constante búsqueda de nuevas ideas para ofrecer soluciones
+          creativas y prácticas.</li>
+        <li><strong>Compromiso con el cliente:</strong> Escuchamos, respondemos y evolucionamos según las necesidades
+          reales de quienes confían en nosotros.</li>
       </ul>
     </section>
 
-    <section class="equipo">
-      <h2>Conocé a nuestro equipo</h2>
-      <article>
-        <h3>Lucía Fernández</h3>
-        <p>Fundadora y directora de diseño. Soñadora del confort moderno.</p>
-      </article>
-      <article>
-        <h3>Martín Rojas</h3>
-        <p>Responsable de calidad y producción. Fan de los detalles.</p>
-      </article>
-    </section>
-
-    <section class="vision">
-      <h2>Nuestra Visión</h2>
-      <p>Crear un mundo donde el buen diseño esté al alcance de todos.</p>
+    <section class="seccion-equipo">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+          <hr>
+          <h3 class="mb-4">Nuestro Equipo</h3>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+            numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+            quisquam eum porro a pariatur veniam.
+          </p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+              class="rounded-circle shadow-1-strong" />
+          </div>
+          <h5 class="mb-3">Maria Gonzalez</h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+            tenetur.
+          </p>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+              class="rounded-circle shadow-1-strong" />
+          </div>
+          <h5 class="mb-3">Lisa Baez</h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+          </p>
+        </div>
+        <div class="col-md-4 mb-0">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+              class="rounded-circle shadow-1-strong" />
+          </div>
+          <h5 class="mb-3">Lucas Perez</h5>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
-
 
   <footer class="footer">
     <div class="footer-contacto d-flex">

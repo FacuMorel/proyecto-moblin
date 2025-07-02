@@ -12,22 +12,26 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg p-0">
-      <a class="" href="../index.html">
-        <img src="../assets/icon/logo.png" alt="Logo"></img>
-      </a>
-      <div class="container-fluid collapse navbar-collapse justify-content-center">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item"><a href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a href="./catalogo.html">Catálogo</a></li>
-          <li class="nav-item"><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-          <li class="nav-item"><a href="#">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid navbar-menu">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <img class="menu" src="../assets/icon/menu.png" alt="menu-hamburguesa">
+        </button>
+        <div id="menu" class="collapse navbar-collapse justify-content-around">
+          <a class="" href="index.html">
+          <img src="../assets/icon/logo.png" alt="Logo" class="logo"></img>
+          </a>
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a href="../pages/catalogo.html">Catálogo</a></li>
+            <li class="nav-item"><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
-    </div>
-
   </header>
+  <hr>
 
   <main>
     <div class="container form-section">
@@ -43,8 +47,9 @@
           <hr>
           <div class="contact-info">
             <p><strong>HORARIO DE ATENCIÓN:</strong><br>
-              <p>Lunes a Viernes de 7 hs. a 16 hs.</p>
-            <img src="../assets/icon/whatsapp-icon.png" alt="whatsapp-contact" class="whatsapp"><p> +54 9 11 9999-9999</p>
+            <p>Lunes a Viernes de 7 hs. a 16 hs.</p>
+            <img src="../assets/icon/whatsapp-icon.png" alt="whatsapp-contact" class="whatsapp">
+            <p> +54 9 11 9999-9999</p>
           </div>
         </div>
 
@@ -87,13 +92,7 @@
               <label for="consulta" class="form-label">Consulta</label>
               <textarea class="form-control" id="consulta" rows="4"></textarea>
             </div>
-            <div class="mb-3">
-              <div class="border rounded p-3">
-                <input type="checkbox" id="robot-check"> I'm not a robot
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-submit">ENVIAR</button>
+            <button type="submit" class="btn-contacto">ENVIAR</button>
           </form>
         </div>
       </div>
@@ -102,17 +101,17 @@
   <footer class="footer">
     <div class="footer-contacto d-flex">
       <div class="d-flex col flex-column social-icons">
-        <span class="">CONTACTO</span>
+        <strong>CONTACTO</strong>
         <a href="#" target="_blank">
-          <img class="whatsapp-icon" src="../assets/icon/whatsapp-icon.png" alt="whatsapp">
+          <img src="../assets/icon/whatsapp-icon.png" alt="whatsapp">
           <p>+54 9 11 9999-9999 </p>
         </a>
         <p>Av.Libertador 9999 / Buenos Aires, Argentina</p>
-        <p>Horario: lunes a viernesde 8:00 a 16:00hs</p>
+        <p>Horario: lunes a viernes de 8:00 a 16:00hs</p>
       </div>
       <div class="d-flex col">
         <div class="d-flex col flex-column social-icons">
-          <span>REDES SOCIALES</span>
+          <strong>REDES SOCIALES</strong>
           <a href="https://www.facebook.com/" target="_blank">
             <img src="../assets/icon/facebook.png" alt="Facebook"> Facebook
           </a>
@@ -126,6 +125,7 @@
       <p class="p-0 m-0">&copy; 2025 Moblin. Todos los derechos reservados.</p>
     </div>
   </footer>
+
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
