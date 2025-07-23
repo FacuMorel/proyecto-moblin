@@ -1,0 +1,28 @@
+.card {
+  border: none;
+  border-radius: 20x;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+
+}
+.card-producto {
+  @extend .card;
+  
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  img {
+    height: 280px;
+    // object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .oferta {
+      font-weight: 700;
+  }
+}

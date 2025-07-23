@@ -1,0 +1,287 @@
+/* Fuente Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #080808;
+}
+
+header {
+  width: 100%;
+  background-color: #d4d2d2;
+}
+
+.logo {
+  height: 140px;
+}
+
+.menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.menu img {
+  width: 150px;
+  height: 150px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+ul li a:hover {
+  color: #007bff;
+}
+ul.active {
+  display: flex;
+}
+
+.card, .card-producto {
+  border: none;
+  border-radius: 20x;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-6px);
+}
+.card-producto img {
+  height: 280px;
+}
+.card-producto .card-body {
+  padding: 1.5rem;
+}
+.card-producto .oferta {
+  font-weight: 700;
+}
+
+.clientes__testimonios {
+  padding: 4rem 0;
+}
+.clientes__titulo {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.clientes__subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.clientes__divider {
+  width: 50%;
+  height: 2px;
+  border: none;
+  margin: 0 auto 32px auto;
+}
+.clientes .card-clientes {
+  border: none;
+  border-bottom: 2px solid;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+.clientes .card-clientes:hover {
+  transform: translateY(-5px);
+}
+.clientes__figura {
+  text-align: center;
+}
+.clientes__imagen {
+  margin-bottom: 16px;
+  border-width: 5px;
+  height: 120px;
+}
+.clientes__texto {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.clientes__nombre {
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #d4d2d2;
+  color: #080808;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+}
+.footer h5 {
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  color: #080808;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #d10000;
+}
+.footer img {
+  width: 20px;
+  height: 20px;
+}
+.footer .footer-legal {
+  background-color: rgba(0, 0, 0, 0.0509803922);
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.custom-button, .button-submit {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  background-color: #2a2a2a;
+}
+.custom-button:hover, .button-submit:hover {
+  transform: scale(1.03);
+}
+
+.button-submit {
+  background-color: #007bff;
+}
+
+.card img {
+  height: 400px;
+}
+
+.main-section {
+  padding: 64px 32px;
+}
+
+.producto-destacado,
+.seccion-testimonios {
+  padding: 64px 32px;
+  margin-top: 48px;
+}
+
+.main-contact {
+  margin: 30px 0;
+  padding: 40px;
+}
+.main-contact .form-section {
+  padding: 32px 16px;
+  background-color: #fff;
+}
+.main-contact .form-section .info-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.main-contact .form-section .contact-info p {
+  margin-bottom: 12px;
+}
+.main-contact .form-section .contact-info .whatsapp {
+  width: 40px;
+  margin: 16px 0;
+}
+
+.main-sobrenos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background-color: #ffffff;
+}
+.main-sobrenos .valores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main-sobrenos .valores h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.main-sobrenos .valores p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.main-sobrenos .valores-lista {
+  text-align: center;
+}
+.main-sobrenos .valores-lista h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.main-sobrenos .valores-lista .seccion-equipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-sobrenos .valores-lista .seccion-equipo ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.main-sobrenos .valores-lista .seccion-equipo ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

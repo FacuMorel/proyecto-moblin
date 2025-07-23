@@ -1,0 +1,35 @@
+@use "../utilities/variables";
+
+
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+// BUTTON
+@mixin button($color: #fff,) {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: $color;
+  transition: 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  &:hover {
+  
+    transform: scale(1.03);
+  }
+}
+
+// NAVBAR $ FOOTER
+@mixin fondo-claro($bg: #d4d2d2, $text-color: #080808) {
+  background-color: $bg;
+  color: $text-color;
+
+}

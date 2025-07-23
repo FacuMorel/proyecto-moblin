@@ -1,0 +1,64 @@
+@use "../utilities/variables";
+
+.clientes {
+  &__testimonios {
+    padding: 4rem 0;
+    // background-color: $gris-claro;
+  }
+
+  &__titulo {
+    font-size: 16px;
+    letter-spacing: 1px;
+    // color: $gris-texto;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  &__subtitulo {
+    font-size: 1.2rem;
+    // color: $variables.$color-texto;
+    margin-bottom: 2rem;
+  }
+
+  &__divider {
+    width: 50%;
+    height: 2px;
+    // background-color: $gris-borde;
+    border: none;
+    margin: 0 auto 32px auto;
+  }
+
+  .card-clientes {
+    border: none;
+    border-bottom: 2px solid ;
+    padding: 2rem;
+    // background-color: $white;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__figura {
+    text-align: center;
+  
+  }
+
+  &__imagen {
+    margin-bottom: 16px;
+    border-width: 5px;
+    height: 120px;
+  }
+
+  &__texto {
+    font-size:16px;
+    // color: $color-texto-secundario;
+    margin-bottom: 1rem;
+  }
+
+  &__nombre {
+    font-weight: 600;
+    // color: $primary;
+  }
+}

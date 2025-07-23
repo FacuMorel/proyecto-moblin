@@ -1,0 +1,41 @@
+@use "../utilities/variables";
+@import "../utilities/mixins";
+
+.footer {
+  @include fondo-claro;
+  @include flex(column, center, center);
+  padding-top: 48px;
+
+  h5 {
+    font-weight: 800;
+    margin-bottom: 16px;
+
+  }
+
+  ul {
+
+    @include flex(column, center, center);
+
+  }
+
+  a {
+    color: variables.$color-texto;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$color-principal;
+    }
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-legal {
+    background-color: variables.$bg-footer;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+  }
+}

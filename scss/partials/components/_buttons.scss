@@ -1,0 +1,16 @@
+@use "../utilities/variables";
+@import "../utilities/mixins";
+
+
+
+
+.custom-button {
+  @include button;
+  background-color: variables.$color-boton;
+}
+
+.button-submit{
+  @extend .custom-button;
+  background-color: variables.$primary-color;
+}
+

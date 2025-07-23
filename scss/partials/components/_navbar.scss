@@ -1,0 +1,49 @@
+@use "../utilities/variables";
+
+$text-color: #333;
+$bg-color: #fff;
+
+header {
+  width: 100%;
+ background-color: #d4d2d2;
+}
+.logo {
+  height: 140px;
+}
+
+    .menu {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: none;
+
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-weight: 600;
+          transition: color 0.3s;
+          font-size: 18px;
+
+          &:hover {
+            color: variables.$primary-color;
+          }
+        }
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+
