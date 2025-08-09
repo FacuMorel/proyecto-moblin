@@ -2,7 +2,7 @@
 @import "../utilities/mixins";
 
 .footer {
-  @include fondo-claro;
+  // @include fondo-claro;
   @include flex(column, center, center);
   padding-top: 48px;
 
